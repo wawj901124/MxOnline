@@ -1,0 +1,15 @@
+{% extends  'org_base.html'%}  <!--继承org_base.html页面-->
+{% load staticfiles %} <!--加载静态文件路径-->
+{% block title %}机构介绍{% endblock %} <!--重写title部分-->
+{% block right_form %}
+    <div class="right companycenter layout" >
+        <div class="head">
+            <h1>机构介绍</h1>
+        </div>
+        <div class="des">
+
+            <p>{{ course_org.desc }}</p>
+        </div>
+    </div>
+{% endblock %}<!--重写right_form部分-->
+{% block page_path %}机构介绍{% endblock %}
